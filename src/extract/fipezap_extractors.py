@@ -38,13 +38,10 @@ class HttpFipezap:
       file_path = 'src/data/fipezap-serieshistoricas.xlsx'
       try:
          if os.path.exists(file_path):
-            self.dataframe = pd.read_excel(file_path)
+            self.dataframe = pd.read_excel(file_path, sheet_name=None)
             print("Consegui ler o excel")
          else:
             print("Arquivo não encontrado", file_path)
       except Exception as e:
          raise ValueError("Erro ao ler o Excel", e)
-      return self
-
-h = HttpFipezap().getExcelJson().getHttpData('src/data/').readExcelAbas()
-
+      return self.dataframe
