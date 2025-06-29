@@ -1,4 +1,4 @@
-from src.extract.ipca_extractors import HttpIPCA
+from src.extract.fipezap_extractors import HttpIPCA
 from src.transform.ipca_transform import TransformIPCA
 from src.utils.df_to_pydantic import df_to_pydantic_list
 from src.repository.ipca_repository import save_ipca_data

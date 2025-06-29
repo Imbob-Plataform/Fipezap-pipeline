@@ -1,4 +1,4 @@
 {
-   "nomeApi": "IPCA",
-   "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.4390/dados?formato=json"
+   "nomeApi": "fipezap-serieshistoricas",
+   "url": "https://downloads.fipe.org.br/indices/fipezap/fipezap-serieshistoricas.xlsx"
 }
